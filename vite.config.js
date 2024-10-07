@@ -22,7 +22,7 @@ export default {
     },
   },
   build: {
-    // minify: false,
+    minify: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
