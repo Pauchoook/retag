@@ -1,0 +1,70 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="header__body">
+      <a href="#" class="header__logo">
+        <img src="/img/logo.svg" alt="logo" class="header__logo-img" />
+      </a>
+      <nav class="header__nav" id="burger">
+        <div class="header__nav-wrapper">
+          <button id="burger-close" class="btn header__burger-close">
+            <div class="header__burger-close-wrapper">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <ul class="list header__list">
+            <li>
+              <a href="#flow" class="anchor">How It works</a>
+            </li>
+            <li>
+              <a href="#">Buy Tags</a>
+            </li>
+            <li>
+              <a href="#say-about" class="anchor">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contacts" class="anchor">ContactUs</a>
+            </li>
+            <li>
+              <a href="#">Label</a>
+            </li>
+            <li>
+              <a href="#about" class="anchor">About</a>
+            </li>
+          </ul>
+          <ul class="list header__languages">
+            <li>
+              <a href="#" class="header__languages-btn active">
+                <img src="/img/flag.svg" alt="flag" class="header__languages-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__languages-btn">
+                <img src="/img/flag-2.svg" alt="flag" class="header__languages-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__languages-btn">
+                <img src="/img/flag-3.svg" alt="flag" class="header__languages-icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__profile">
+        <button data-modal="auth" data-tab="login" class="btn btn-modal btn-tab btn-custom btn-custom--stroke header__profile-btn">Log In</button>
+        <button data-modal="auth" data-tab="sign-up" class="btn btn-modal btn-tab btn-custom btn-custom--primary header__profile-btn">Sign Up</button>
+				<button data-modal="auth" class="btn btn-modal header__btn-profile">
+					<svg class="header__profile-icon">
+						<use xlink:href='img/icons/icons.svg#icon-profile'></use>
+					</svg>
+				</button>
+				<button class="btn header__burger-btn" id="burger-open">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,128 @@
+.modal {
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+  --bg-overlay-hide: rgba(0, 0, 0, 0);
+  &.open {
+    .modal__overlay,
+    .modal__window {
+      opacity: 1;
+      z-index: 1000;
+    }
+    .modal__overlay {
+      background-color: var(--bg-overlay);
+      overflow-y: auto;
+    }
+    .modal__window {
+      transform: translateY(0);
+    }
+  }
+  &.hide {
+    .modal__overlay,
+    .modal__window {
+      opacity: 1;
+      z-index: 1000;
+    }
+    .modal__overlay {
+      background-color: var(--bg-overlay-hide);
+    }
+    .modal__window {
+      transform: translateY(-1000px);
+    }
+  }
+  &__overlay,
+  &__window {
+    opacity: 0;
+    z-index: -10;
+  }
+  &__overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    inset: 0;
+    background-color: var(--bg-overlay);
+    transition: background-color 0.5s ease;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+      display: none;
+    }
+  }
+  &__window {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 50px 55px;
+    transform: translateY(-1000px);
+    opacity: 0;
+    height: fit-content;
+    margin-top: 50px;
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+    @include laptop-min {
+      padding: 50px 45px;
+    }
+    @include tablet {
+      max-width: none;
+      padding: 90px 15px 50px 15px;
+      margin-top: 0;
+    }
+    @include mobile {
+    }
+  }
+  &__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    color: var(--mobster);
+    right: 15px;
+    top: 15px;
+    transition: opacity 0.2s ease;
+    span {
+      position: absolute;
+      width: 18px;
+      height: 3px;
+      background-color: currentColor;
+      border-radius: 2px;
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+  &__close-wrapper {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    @include laptop {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  &__form-item {
+    margin-bottom: 20px;
+  }
+  &__form-btn {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    @include mobile-min {
+      max-width: none;
+    }
+  }
+}

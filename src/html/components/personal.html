@@ -1,0 +1,134 @@
+<section class="personal">
+  <nav class="personal__nav">
+    <a href="/" class="personal__back">
+      <svg class="personal__back-icon">
+        <use xlink:href="#icon-arrow"></use>
+      </svg>
+      <span>back</span>
+    </a>
+    <button class="btn personal__close">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="container">
+    <h1 class="title personal__title"><span>Personal</span> Area</h1>
+    <form action="#" class="personal__form">
+      <div class="personal__form-wrapper">
+        <label for="name" class="form-item personal__label">
+          <span class="form-item__title">Name (Login)</span>
+          <input type="text" name="name" id="name" value="Jane Cooper" class="input" />
+          <svg class="form-item__icon">
+            <use xlink:href="#icon-pen"></use>
+          </svg>
+        </label>
+        <label for="password" class="form-item personal__label">
+          <span class="form-item__title">Password</span>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value="fwefwefewfwwe"
+            class="input"
+          />
+          <button class="btn password-btn"></button>
+        </label>
+        <label for="email" class="form-item personal__label">
+          <span class="form-item__title">Email</span>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="jane.cooper@example.com"
+            class="input"
+          />
+          <svg class="form-item__icon">
+            <use xlink:href="#icon-pen"></use>
+          </svg>
+        </label>
+        <label for="new-password" class="form-item personal__label">
+          <span class="form-item__title">Password</span>
+          <input
+            type="password"
+            name="new-password"
+            id="new-password"
+            placeholder="New Password"
+            class="input"
+          />
+          <button class="btn password-btn"></button>
+        </label>
+        <label for="message" class="form-item personal__label">
+          <span class="form-item__title">Message</span>
+          <textarea name="message" id="message" placeholder="message" class="input textarea">
+Hello! My name is Jane. Thank you for taking care of my item and wanting to return it to me! You can call me at +1(916) 555 4433. I will be very grateful to you for returning my item.</textarea
+          >
+          <svg class="form-item__icon">
+            <use xlink:href="#icon-pen"></use>
+          </svg>
+        </label>
+        <label for="repeat-password" class="form-item personal__label">
+          <span class="form-item__title">Password</span>
+          <input
+            type="password"
+            name="repeat-password"
+            id="repeat-password"
+            placeholder="Repeat Password"
+            class="input"
+          />
+          <button class="btn password-btn"></button>
+        </label>
+      </div>
+      <div class="personal__line"></div>
+      <!-- disabled - класс, дающий opacity -->
+      <button class="btn btn-custom btn-custom--stroke personal__btn disabled">Save changes</button>
+    </form>
+    <div class="personal__items">
+      <h2 class="title personal__title"><span>My</span> items</h2>
+      <div class="personal__table">
+        <div class="personal__table-row personal__table-head">
+          <div class="personal__table-value personal__table-value--num">№</div>
+          <div class="personal__table-value personal__table-value--id">ID</div>
+          <div class="personal__table-value personal__table-value--name">Name of Item</div>
+          <div class="personal__table-value personal__table-value--status">Status</div>
+        </div>
+        <div class="personal__table-row">
+          <div class="personal__table-value personal__table-value--num">1</div>
+          <div class="personal__table-value personal__table-value--id">62565265</div>
+          <div class="personal__table-value personal__table-value--name">Backpack</div>
+          <div class="personal__table-value personal__table-value--status">
+            <input type="checkbox" id="backpack" checked class="toggle-btn__input">
+            <label for="backpack" class="toggle-btn"></label>
+          </div>
+        </div>
+        <div class="personal__table-row">
+          <div class="personal__table-value personal__table-value--num">2</div>
+          <div class="personal__table-value personal__table-value--id">34656461</div>
+          <div class="personal__table-value personal__table-value--name">Passport</div>
+          <div class="personal__table-value personal__table-value--status">
+            <input type="checkbox" id="passport" checked class="toggle-btn__input">
+            <label for="passport" class="toggle-btn"></label>
+          </div>
+        </div>
+        <div class="personal__table-row">
+          <div class="personal__table-value personal__table-value--num">3</div>
+          <div class="personal__table-value personal__table-value--id">51435326</div>
+          <div class="personal__table-value personal__table-value--name">Suitcase red</div>
+          <div class="personal__table-value personal__table-value--status">
+            <input type="checkbox" id="suitcase-red" checked class="toggle-btn__input">
+            <label for="suitcase-red" class="toggle-btn"></label>
+          </div>
+        </div>
+        <div class="personal__table-row">
+          <div class="personal__table-value personal__table-value--num">4</div>
+          <div class="personal__table-value personal__table-value--id">34653654</div>
+          <div class="personal__table-value personal__table-value--name">Yellow bag</div>
+          <div class="personal__table-value personal__table-value--status">
+            <input type="checkbox" id="yellow-bag" class="toggle-btn__input">
+            <label for="yellow-bag" class="toggle-btn"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn personal__table-btn">New item</button>
+  </div>
+</section>

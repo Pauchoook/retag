@@ -1,0 +1,137 @@
+.contacts {
+  padding: 140px 0px;
+  background: rgba(234, 221, 255, 0.12);
+  @include tablet {
+    padding: 60px 0px;
+  }
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+  &__line {
+    max-width: 870px;
+    width: 100%;
+    @include laptop {
+      max-width: 840px;
+    }
+    @include laptop-middle {
+      max-width: 735px;
+    }
+    @include laptop-min {
+      max-width: 540px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__body {
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 100px;
+    &.open {
+      display: flex !important;
+    }
+    @include tablet {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+  }
+  &__form {
+    flex: 0 1 455px;
+    @include tablet {
+      flex: none;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  &__form-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__form-btn {
+    @include tablet {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__social {
+    flex: 0 1 555px;
+    @include tablet {
+      flex: none
+    }
+  }
+  &__social-main {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 34px;
+    background-color: var(--bush);
+    color: white;
+    margin-bottom: 20px;
+    @include laptop-min {
+      padding: 30px;
+    }
+    @include tablet {
+      padding: 20px;
+    }
+  }
+  &__social-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 129%;
+    @include laptop {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 22px;
+      line-height: 127%;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &__btn {
+    @include flex-center;
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid white;
+    color: var(--bush);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+    @include hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+  &__social-content {
+    margin: 0;
+    max-width: 515px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--wine);
+    @include tablet {
+      font-size: 14px;
+      line-height: 143%;
+    }
+  }
+}

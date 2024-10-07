@@ -1,0 +1,42 @@
+.slider-nav {
+  position: relative;
+  display: flex;
+  border-radius: 100px;
+  overflow: hidden;
+  max-width: 210px;
+  width: 100%;
+  border: 1px solid var(--mobster);
+  @include mobile {
+    max-width: 100%;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 1px);
+    background-color: var(--mobster);
+  }
+  &__btn {
+    @include flex-center;
+    width: 50%;
+    height: 40px;
+    transition: background-color .2s ease, color .2s ease;
+    background-color: white;
+    @include hover {
+      color: white;
+      background-color: var(--bush);
+    }
+    &--next {
+      .slider-nav__arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__arrow {
+    width: 12px;
+    height: 12px;
+    color: inherit;
+  }
+}

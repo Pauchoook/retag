@@ -1,0 +1,60 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <div class="section-head">
+      <h2 class="title title-2">ContactUs</h2>
+      <img src="/img/contacts-line.svg" alt="line" class="contacts__line" />
+    </div>
+    <div class="contacts__body tab open">
+      <form action="#" class="contacts__form">
+        <label for="email" class="form-item contacts__form-item">
+          <input type="text" placeholder="Email" id="email" required class="input" />
+        </label>
+        <label for="message" class="form-item contacts__form-item">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="message"
+            class="input textarea"
+          ></textarea>
+        </label>
+        <input type="checkbox" id="policy" required class="input-check" />
+        <label for="policy" class="policy-main"
+          >I agree with the <a href="#">Privacy Policy</a></label
+        >
+        <button class="btn btn-custom btn-custom--primary contacts__form-btn">Send</button>
+      </form>
+      <div class="contacts__social">
+        <div class="contacts__social-main">
+          <h5 class="contacts__social-title">Write to us!</h5>
+          <ul class="list contacts__list">
+            <li>
+              <a href="#" class="contacts__btn">
+                <svg class="contacts__icon">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contacts__btn">
+                <svg class="contacts__icon">
+                  <use xlink:href="#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contacts__btn">
+                <svg class="contacts__icon">
+                  <use xlink:href="#icon-pt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="contacts__social-content">
+          Contact us on social networks or write a message in the form. We will be happy
+          to answer you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

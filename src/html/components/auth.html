@@ -1,0 +1,122 @@
+<div data-modal="auth" class="modal">
+  <div class="modal__overlay">
+    <div class="modal__window">
+      <button class="btn modal__close">
+        <div class="modal__close-wrapper">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="auth__body parent-tab">
+        <h1 class="auth__title"><span>Welcome back</span> to <span class="font">REUNIT.ME</span></h1>
+        <ul class="list auth__with">
+          <li>
+            <a href="/" class="auth__with-btn">
+              <img src="/img/google.svg" alt="google" class="auth__with-icon" />
+              <span>Continue with Google</span>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="auth__with-btn">
+              <img src="/img/facebook.svg" alt="facebook" class="auth__with-icon" />
+              <span>Continue with Google</span>
+            </a>
+          </li>
+        </ul>
+        <div class="auth__or">
+          <div class="auth__or-line"></div>
+          <span class="auth__or-content">or</span>
+          <div class="auth__or-line"></div>
+        </div>
+        <div data-tab="login" class="tab open">
+          <form action="#" class="auth__form">
+            <label for="login" class="form-item auth__form-item">
+              <input
+                type="text"
+                name="login"
+                id="login"
+                placeholder="Name (Login)"
+                required
+                class="input"
+              />
+            </label>
+            <label for="email" class="form-item auth__form-item">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Name Email"
+                required
+                class="input"
+              />
+            </label>
+            <label for="password" class="form-item auth__form-item">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                class="input"
+              />
+              <button class="btn password-btn"></button>
+            </label>
+            <input type="checkbox" id="policy-login" required class="input-check" />
+            <label for="policy-login" class="policy-main"
+              >I agree with the <a href="#">Privacy Policy</a></label
+            >
+            <button type="button" class="btn btn-custom btn-custom--primary auth__btn">Log in</button>
+          </form>
+          <div class="auth__bottom">
+            <p class="auth__bottom-content">Don't have an account?</p>
+            <button data-tab="sign-up" class="btn btn-tab btn-custom btn-custom--stroke">Sign up</button>
+          </div>
+        </div>
+        <div data-tab="sign-up" class="tab">
+          <form action="#" class="auth__form">
+            <label for="login-sign" class="form-item auth__form-item">
+              <input
+                type="text"
+                name="login-sign"
+                id="login-sign"
+                placeholder="Name (Login)"
+                required
+                class="input"
+              />
+            </label>
+            <label for="email-sign" class="form-item auth__form-item">
+              <input
+                type="email"
+                name="email-sign"
+                id="email-sign"
+                placeholder="Name Email"
+                required
+                class="input"
+              />
+            </label>
+            <label for="password-sign" class="form-item auth__form-item">
+              <input
+                type="password"
+                name="password-sign"
+                id="password-sign"
+                placeholder="Password"
+                required
+                class="input"
+              />
+              <button class="btn password-btn"></button>
+            </label>
+            <input type="checkbox" id="policy-sign" required class="input-check" />
+            <label for="policy-sign" class="policy-main"
+              >I agree with the <a href="#">Privacy Policy</a></label
+            >
+            <button type="button" class="btn btn-custom btn-custom--primary auth__btn">Create account</button>
+          </form>
+          <div class="auth__bottom">
+            <p class="auth__bottom-content">Already have an account?</p>
+            <button data-tab="login" class="btn btn-tab btn-custom btn-custom--stroke">Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,92 @@
+.form-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__title {
+    position: absolute;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    left: 12px;
+    top: -8px;
+    z-index: 2;
+  }
+  &__icon {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    color: var(--ship);
+  }
+}
+.input {
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--lavender);
+  padding: 15px 55px 15px 15px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--baltic);
+  width: 100%;
+  &::placeholder {
+    color: inherit;
+    font-size: inherit;
+  }
+}
+.textarea {
+  resize: none;
+  height: 90px;
+}
+.input-check {
+  display: none;
+  &:checked + .policy-main {
+    &::before {
+      background-color: var(--ship);
+    }
+  }
+}
+.policy-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  padding-left: 35px;
+  color: var(--mobster);
+  margin: 30px 0px;
+  @include tablet {
+    margin: 20px 0px;
+  }
+  a {
+    color: var(--bush);
+    margin-left: 2px;
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--ship);
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    left: 8px;
+  }
+}
+.password-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 4px;
+  background: url("@img/eye.svg") center center / 24px 24px no-repeat;
+  &.active {
+    background: url("@img/eye-open.svg") center center / 24px 24px no-repeat;
+  }
+}
